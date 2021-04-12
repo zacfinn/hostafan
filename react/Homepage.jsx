@@ -12,14 +12,14 @@ import PropTypes from "prop-types";
 import { Search, RoomRounded } from "@material-ui/icons";
 import ListingCard from "../components/listings/ListingCard";
 import * as listingService from "../services/listingService";
-import logger from "sabio-debug";
+//Proprietary code removed
 import { Autocomplete, LoadScript } from "@react-google-maps/api";
 import { GOOGLE_API_KEY } from "../services/serviceHelpers";
 import Geocode from "react-geocode";
 
 Geocode.setApiKey(GOOGLE_API_KEY);
 const libraries = ["places"];
-const _logger = logger.extend("listings");
+//Proprietary code removed
 
 const Listings = (props) => {
   const [listings, setListings] = useState("Loading events...");
@@ -176,9 +176,7 @@ const Listings = (props) => {
 };
 
 Listings.propTypes = {
-  history: PropTypes.shape({
-    push: PropTypes.func,
-  }),
+//Proprietary code removed
 };
 
 export default Listings;
