@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Dynamic;
 using System.Text;
 
-namespace Sabio.Models.Domain
+namespace //Proprietary code removed
 {
     public class Listing
     {
