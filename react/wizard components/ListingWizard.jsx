@@ -5,7 +5,7 @@ import WizardStep2 from "../components/forms/WizardStep2";
 import WizardStep3 from "../components/forms/WizardStep3";
 import WizardStep4 from "../components/forms/WizardStep4";
 import * as listingService from "../services/listingService";
-import logger from "sabio-debug";
+//Proprietary code removed
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMapMarkedAlt,
@@ -16,21 +16,19 @@ import {
 import "../components/forms/LokiStyling.css";
 import { Snackbar } from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
-
-const _logger = logger.extend("listings");
+//Proprietary code removed
 
 const ListingWizard = () => {
   const [formData, setFormData] = useState({
     title: "",
     serviceTypeId: 1,
     serviceProfileId: 0,
-    eventId: 7,
+//Proprietary code removed
     description: "",
     shortDescription: "",
     amenities: [{ name: "" }],
     additionalServices: false,
-    rideshareId: 0,
-    rideshareCost: 0,
+//Proprietary code removed
   });
   const [snackbarState, setSnackbarState] = useState({
     display: false,
@@ -40,13 +38,11 @@ const ListingWizard = () => {
 
   const onFinish = (values) => {
     setFormData(values);
-    _logger(formData);
     let inputData = { ...values };
     inputData.amenities = inputData.amenities
       .map((amenity) => amenity.name)
       .filter(Boolean);
-    inputData.isActive = true;
-    _logger(inputData);
+//Proprietary code removed
     listingService
       .createListing(inputData)
       .then(onCreateListingSuccess)
