@@ -16,10 +16,7 @@ import {
 const WizardStep3 = (props) => {
   const {
     values,
-    //touched,
-    //errors,
     handleChange,
-    //handleBlur,
     handleSubmit,
     nextLabel,
     backLabel,
@@ -60,28 +57,18 @@ const WizardStep3 = (props) => {
                 <TextField
                   fullWidth
                   className="m-2 mb-4"
-                  name="rideshareId"
                   select
-                  label="Rideshare Profile"
-                  value={values.rideshareId}
+//Proprietary code removed
                   onChange={handleChange}
                   variant="outlined"
                 >
-                  <MenuItem value={0}>
-                    No rideshare profiles associated with account
-                  </MenuItem>
-                  {/*the following menu items will be populated with an api call to rideshares on next PR*/}
-                  <MenuItem value={1}>1990 Honda Civic</MenuItem>
-                  <MenuItem value={2}>1987 Ford Pinto</MenuItem>
-                  <MenuItem value={3}>1999 Toyota Camry</MenuItem>
+//Proprietary code removed
                 </TextField>
                 <TextField
                   fullWidth
                   className="m-2 mb-4"
                   type="number"
-                  name="rideshareCost"
-                  label="Rideshare Price"
-                  value={values.rideshareCost}
+//Proprietary code removed
                   onChange={handleChange}
                   variant="outlined"
                 ></TextField>
@@ -110,55 +97,18 @@ const WizardStep3 = (props) => {
 
 WizardStep3.propTypes = {
   formData: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    serviceTypeId: PropTypes.number.isRequired,
-    serviceProfileId: PropTypes.number.isRequired,
-    eventId: PropTypes.number.isRequired,
-    description: PropTypes.string.isRequired,
-    shortDescription: PropTypes.string.isRequired,
-    amenities: PropTypes.arrayOf(PropTypes.shape({ name: PropTypes.string })),
-    additionalServices: PropTypes.bool.isRequired,
-    rideshareId: PropTypes.number.isRequired,
-    rideshareCost: PropTypes.number.isRequired,
+//Proprietary code removed
   }),
   values: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    serviceTypeId: PropTypes.number.isRequired,
-    serviceProfileId: PropTypes.number.isRequired,
-    eventId: PropTypes.number.isRequired,
-    description: PropTypes.string.isRequired,
-    shortDescription: PropTypes.string.isRequired,
-    amenities: PropTypes.arrayOf(PropTypes.shape({ name: PropTypes.string })),
-    additionalServices: PropTypes.bool.isRequired,
-    rideshareId: PropTypes.number.isRequired,
-    rideshareCost: PropTypes.number.isRequired,
+//Proprietary code removed
   }),
   touched: PropTypes.shape({
-    title: PropTypes.bool,
-    serviceTypeId: PropTypes.bool,
-    serviceProfileId: PropTypes.bool,
-    eventId: PropTypes.bool,
-    description: PropTypes.bool,
-    shortDescription: PropTypes.bool,
-    amenities: PropTypes.arrayOf(PropTypes.shape({ name: PropTypes.bool })),
-    additionalServices: PropTypes.bool,
-    rideshareId: PropTypes.bool,
-    rideshareCost: PropTypes.bool,
+//Proprietary code removed
   }),
   errors: PropTypes.shape({
-    title: PropTypes.string,
-    serviceTypeId: PropTypes.string,
-    serviceProfileId: PropTypes.string,
-    eventId: PropTypes.string,
-    description: PropTypes.string,
-    shortDescription: PropTypes.string,
-    amenities: PropTypes.arrayOf(PropTypes.shape({ name: PropTypes.string })),
-    additionalServices: PropTypes.string,
-    rideshareId: PropTypes.string,
-    rideshareCost: PropTypes.string,
+//Proprietary code removed
   }),
   handleChange: PropTypes.func.isRequired,
-  //handleBlur: PropTypes.func.isRequired,
   handleSubmit: PropTypes.func.isRequired,
   onChange: PropTypes.func.isRequired,
   nextLabel: PropTypes.string,
@@ -168,16 +118,7 @@ WizardStep3.propTypes = {
 
 export default withFormik({
   mapPropsToValues: (props) => ({
-    title: props.formData.title,
-    serviceTypeId: props.formData.serviceTypeId,
-    serviceProfileId: props.formData.serviceProfileId,
-    eventId: props.formData.eventId,
-    description: props.formData.description,
-    shortDescription: props.formData.shortDescription,
-    amenities: props.formData.amenities,
-    additionalServices: props.formData.additionalServices,
-    rideshareId: props.formData.rideshareId,
-    rideshareCost: props.formData.rideshareCost,
+//Proprietary code removed
   }),
 
   validationSchema: listingSchema,
