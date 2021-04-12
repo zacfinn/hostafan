@@ -1,47 +1,13 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import * as dateService from "../../services/dateService";
-
 import ListingReservation from "./ListingReservation";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { Grid, Container, Card } from "@material-ui/core";
-
 import Slider from "react-slick";
 
 const ShowListingDetails = (props) => {
-  const [parking, setParking] = React.useState(false);
-  const [rideshare, setRideshare] = React.useState(false);
-
-  const details = props.details;
-  let rideshareCost = 0;
-  let parkingCost = 0;
-
-  const hasServices = (details) => {
-    if (details.services) {
-      details.services.forEach((service) => {
-        if (service.serviceTypeId === 2) {
-          setRideshare(true);
-          rideshareCost = service.cost;
-          return rideshareCost;
-        } else if (service.serviceTypeId === 3) {
-          setParking(true);
-          parkingCost = service.cost;
-          return parkingCost;
-        }
-      });
-    }
-  };
-
-  React.useEffect(() => {
-    if (details.services !== null) {
-      hasServices(details);
-      details.rideshareCost = rideshareCost;
-      details.parkingCost = parkingCost;
-    }
-  });
-
+//Proprietary code removed
   return (
     <Fragment>
       <div className="feature-box bg-slick-carbon py-3 py-xl-5">
@@ -203,40 +169,7 @@ const ShowListingDetails = (props) => {
 };
 
 ShowListingDetails.propTypes = {
-  details: PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    title: PropTypes.string.isRequired,
-    shortDescription: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    event: PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      dateStart: PropTypes.string.isRequired,
-      dateEnd: PropTypes.string.isRequired,
-      shortDescription: PropTypes.string.isRequired,
-      imageUrl: PropTypes.string.isRequired,
-    }),
-    serviceType: PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired,
-    }),
-    listingProfile: PropTypes.shape({
-      Baths: PropTypes.number,
-      Bedrooms: PropTypes.number,
-      GuestCapacity: PropTypes.number,
-      CostPerNight: PropTypes.number,
-      LicenseStatus: PropTypes.number,
-      InsuranceStatus: PropTypes.number,
-    }),
-    services: PropTypes.arrayOf(
-      PropTypes.shape({
-        cost: PropTypes.number,
-        serviceProfileId: PropTypes.number,
-        serviceTypeId: PropTypes.number,
-      })
-    ),
-    parkingCost: PropTypes.number,
-    rideshareCost: PropTypes.number,
-  }),
+//Proprietary code removed
 };
 
 export default ShowListingDetails;
