@@ -1,10 +1,10 @@
-﻿using Sabio.Models.Domain;
+//Proprietary code removed
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Sabio.Models.Requests
+namespace //Proprietary code removed
 {
     public class ListingAddRequest
     {
@@ -22,7 +22,7 @@ namespace Sabio.Models.Requests
         [Range(1, Int32.MaxValue)]
         public int EventId { get; set; }
 
-        public string InternalName { get; set; }
+//Proprietary code removed
 
         [Required]
         [StringLength(50, MinimumLength = 2)]
@@ -39,10 +39,8 @@ namespace Sabio.Models.Requests
 
         [Required]
         public bool AdditionalServices { get; set; }
-
-        public int RideshareId { get; set; }
-
-        public int RideshareCost { get; set; }
+        
+//Proprietary code removed
 
     }
 }
