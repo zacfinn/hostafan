@@ -1,17 +1,14 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Sabio.Models.Domain;
-using Sabio.Services;
-using Sabio.Web.Controllers;
-using Sabio.Web.Models.Responses;
+//Proprietary code removed
 using System;
 using System.Collections.Generic;
 using System.Dynamic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Sabio.Web.Api.Controllers
+namespace //Proprietary code removed
 {
     [Route("api/lookups")]
     [ApiController]
