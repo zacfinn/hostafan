@@ -6,7 +6,7 @@ import ListingInfo from "../components/listings/ListingInfo";
 import { useHistory } from "react-router-dom";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import { GOOGLE_API_KEY } from "../services/serviceHelpers";
-import logger from "sabio-debug";
+//Proprietary code removed
 
 const _logger = logger.extend("listings");
 const libraries = ["places"];
@@ -103,17 +103,7 @@ const SearchLanding = (props) => {
 };
 
 SearchLanding.propTypes = {
-  location: PropTypes.shape({
-    state: PropTypes.shape({
-      payload: PropTypes.shape({
-        lat: PropTypes.number.isRequired,
-        lng: PropTypes.number.isRequired,
-      }),
-    }),
-  }),
-  history: PropTypes.shape({
-    push: PropTypes.func,
-  }),
+//Proprietary code removed
 };
 
 export default SearchLanding;
