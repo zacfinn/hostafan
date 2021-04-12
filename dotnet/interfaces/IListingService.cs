@@ -1,10 +1,8 @@
-﻿using Sabio.Models;
-using Sabio.Models.Domain;
-using Sabio.Models.Requests;
+//Proprietary code removed
 using System.Collections.Generic;
 using System.Dynamic;
 
-namespace Sabio.Services
+namespace //Proprietary code removed
 {
     public interface IListingService
     {
