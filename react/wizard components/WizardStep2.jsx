@@ -107,52 +107,16 @@ const WizardStep2 = (props) => {
 
 WizardStep2.propTypes = {
   formData: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    serviceTypeId: PropTypes.number.isRequired,
-    serviceProfileId: PropTypes.number.isRequired,
-    eventId: PropTypes.number.isRequired,
-    description: PropTypes.string.isRequired,
-    shortDescription: PropTypes.string.isRequired,
-    amenities: PropTypes.arrayOf(PropTypes.shape({ name: PropTypes.string })),
-    additionalServices: PropTypes.bool.isRequired,
-    rideshareId: PropTypes.number.isRequired,
-    rideshareCost: PropTypes.number.isRequired,
+//Proprietary code removed
   }),
   values: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    serviceTypeId: PropTypes.number.isRequired,
-    serviceProfileId: PropTypes.number.isRequired,
-    eventId: PropTypes.number.isRequired,
-    description: PropTypes.string.isRequired,
-    shortDescription: PropTypes.string.isRequired,
-    amenities: PropTypes.arrayOf(PropTypes.shape({ name: PropTypes.string })),
-    additionalServices: PropTypes.bool.isRequired,
-    rideshareId: PropTypes.number.isRequired,
-    rideshareCost: PropTypes.number.isRequired,
+//Proprietary code removed
   }),
   touched: PropTypes.shape({
-    title: PropTypes.bool,
-    serviceTypeId: PropTypes.bool,
-    serviceProfileId: PropTypes.bool,
-    eventId: PropTypes.bool,
-    description: PropTypes.bool,
-    shortDescription: PropTypes.bool,
-    amenities: PropTypes.arrayOf(PropTypes.shape({ name: PropTypes.bool })),
-    additionalServices: PropTypes.bool,
-    rideshareId: PropTypes.bool,
-    rideshareCost: PropTypes.bool,
+//Proprietary code removed
   }),
   errors: PropTypes.shape({
-    title: PropTypes.string,
-    serviceTypeId: PropTypes.string,
-    serviceProfileId: PropTypes.string,
-    eventId: PropTypes.string,
-    description: PropTypes.string,
-    shortDescription: PropTypes.string,
-    amenities: PropTypes.arrayOf(PropTypes.shape({ name: PropTypes.string })),
-    additionalServices: PropTypes.string,
-    rideshareId: PropTypes.string,
-    rideshareCost: PropTypes.string,
+//Proprietary code removed
   }),
   handleChange: PropTypes.func.isRequired,
   handleBlur: PropTypes.func.isRequired,
@@ -165,16 +129,7 @@ WizardStep2.propTypes = {
 
 export default withFormik({
   mapPropsToValues: (props) => ({
-    title: props.formData.title,
-    serviceTypeId: props.formData.serviceTypeId,
-    serviceProfileId: props.formData.serviceProfileId,
-    eventId: props.formData.eventId,
-    description: props.formData.description,
-    shortDescription: props.formData.shortDescription,
-    amenities: props.formData.amenities,
-    additionalServices: props.formData.additionalServices,
-    rideshareId: props.formData.rideshareId,
-    rideshareCost: props.formData.rideshareCost,
+//Proprietary code removed
   }),
 
   validationSchema: listingSchema,
