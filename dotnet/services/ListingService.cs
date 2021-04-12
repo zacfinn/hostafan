@@ -1,9 +1,4 @@
-﻿using Sabio.Data;
-using Sabio.Data.Providers;
-using Sabio.Models;
-using Sabio.Models.Domain;
-using Sabio.Models.Requests;
-using Sabio.Services.Interfaces;
+//Proprietary code removed
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -12,7 +7,7 @@ using System.Dynamic;
 using System.Reflection;
 using System.Text;
 
-namespace Sabio.Services
+namespace //Proprietary code removed
 {
     public class ListingService : IListingService, IListingMapper
     {
@@ -28,7 +23,7 @@ namespace Sabio.Services
 
         public ExpandoObject Get(int id)
         {
-            string procName = "[dbo].[Listings_SelectDetails_ById_V2]";
+            string procName = "[dbo].[Listings_SelectDetails_ById]";
             dynamic resultObj = new ExpandoObject();
 
             _data.ExecuteCmd(procName, delegate (SqlParameterCollection parameterCollection)
@@ -48,7 +43,7 @@ namespace Sabio.Services
             Paged<Listing> pagedResult = null;
             List<Listing> listings = null;
             int totalCount = 0;
-            string procName = "[dbo].[Listings_SelectDetails_V2]";
+            string procName = "[dbo].[Listings_SelectDetails]";
 
             _data.ExecuteCmd(procName, inputParamMapper: delegate (SqlParameterCollection parameterCollection)
             {
@@ -160,19 +155,7 @@ namespace Sabio.Services
             _data.ExecuteNonQuery(procName,
                 inputParamMapper: delegate (SqlParameterCollection col)
                 {
-                    col.AddWithValue("@batchAmenities", paramValue);
-                    col.AddWithValue("@ServiceTypeId", model.ServiceTypeId);
-                    col.AddWithValue("@ServiceProfileId", model.ServiceProfileId);
-                    col.AddWithValue("@EventId", model.EventId);
-                    col.AddWithValue("@InternalName", model.InternalName);
-                    col.AddWithValue("@Title", model.Title);
-                    col.AddWithValue("@ShortDescription", model.ShortDescription);
-                    col.AddWithValue("@Description", model.Description);
-                    col.AddWithValue("@IsActive", model.IsActive);
-                    col.AddWithValue("@CreatedBy", userId);
-                    col.AddWithValue("@AdditionalServices", model.AdditionalServices);
-                    col.AddWithValue("@RideshareId", model.RideshareId);
-                    col.AddWithValue("@RideshareCost", model.RideshareCost);
+//Proprietary code removed
 
                     SqlParameter idOut = new SqlParameter("@Id", SqlDbType.Int);
                     idOut.Direction = ParameterDirection.Output;
@@ -201,16 +184,7 @@ namespace Sabio.Services
             _data.ExecuteNonQuery(procName,
                 inputParamMapper: delegate (SqlParameterCollection col)
                 {
-                    col.AddWithValue("@batchAmenities", paramValue);
-                    col.AddWithValue("@ServiceTypeId", model.ServiceTypeId);
-                    col.AddWithValue("@ServiceProfileId", model.ServiceProfileId);
-                    col.AddWithValue("@EventId", model.EventId);
-                    col.AddWithValue("@InternalName", model.InternalName);
-                    col.AddWithValue("@Title", model.Title);
-                    col.AddWithValue("@ShortDescription", model.ShortDescription);
-                    col.AddWithValue("@Description", model.Description);
-                    col.AddWithValue("@IsActive", model.IsActive);
-                    col.AddWithValue("@Id", model.Id);
+//Proprietary code removed
                 },
                 returnParameters: null);
         }
@@ -304,19 +278,7 @@ namespace Sabio.Services
             return listing;
         }
 
-        private static ExpandoObject ConvertToExpando(object obj)
-        {
-            ExpandoObject result = new ExpandoObject();
-
-            PropertyInfo[] properties = obj.GetType().GetProperties();
-
-            foreach (PropertyInfo property in properties)
-            {
-                result.TryAdd(property.Name, null);
-            }
-            
-            return result;
-        }
+//Proprietary code removed
 
         private DataTable MapAmenitiesToTable(List<string> amenitiesToMap)
         {
