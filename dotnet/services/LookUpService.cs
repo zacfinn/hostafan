@@ -1,6 +1,4 @@
-﻿using Sabio.Data;
-using Sabio.Data.Providers;
-using Sabio.Models.Domain;
+//Proprietary code removed
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,7 +6,7 @@ using System.Dynamic;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Sabio.Services
+namespace //Proprietary code removed
 {
     public class LookUpService : ILookUpService
     {
@@ -167,15 +165,6 @@ namespace Sabio.Services
             return lookUp;
         }
 
-        private static string ToCamelCase(string str)
-        {
-            string name = null;
-            if(str.Length > 0)
-            {
-                str = Regex.Replace(str, "([A-Z])([A-Z]+)($|[A-Z])", m => m.Groups[1].Value + m.Groups[2].Value.ToLower() + m.Groups[3].Value);
-                name = char.ToLower(str[0]) + str.Substring(1);
-            }
-            return name;
-        }
+//Proprietary code removed
     }
 }
