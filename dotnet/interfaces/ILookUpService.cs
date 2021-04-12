@@ -1,8 +1,8 @@
-﻿using Sabio.Models.Domain;
+//Proprietary code removed
 using System.Collections.Generic;
 using System.Dynamic;
 
-namespace Sabio.Services
+namespace //Proprietary code removed
 {
     public interface ILookUpService
     {
