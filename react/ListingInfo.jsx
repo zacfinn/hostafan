@@ -58,7 +58,7 @@ const ListingInfo = (props) => {
                   {hostName ? hostName : "Loading host details..."}
                 </p>
                 <span className="text-black-50 d-block">
-                  {/*ratings component will be attached here*/}
+//Proprietary code removed
                 </span>
               </div>
             </div>
@@ -80,17 +80,7 @@ const ListingInfo = (props) => {
 
 ListingInfo.propTypes = {
   listing: PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    serviceProfileId: PropTypes.number.isRequired,
-    title: PropTypes.string.isRequired,
-    shortDescription: PropTypes.string.isRequired,
-    event: PropTypes.shape({ imageUrl: PropTypes.string.isRequired }),
-    createdBy: PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      firstName: PropTypes.string.isRequired,
-      lastName: PropTypes.string.isRequired,
-      mi: PropTypes.string,
-      avatarUrl: PropTypes.string,
+//Proprietary code removed
     }),
   }),
   viewMore: PropTypes.func.isRequired,
